@@ -4,6 +4,7 @@ export default class Bartenders extends React.Component {
     function mapBartenders(bartenders) {
       let working = bartenders.map(e => {
         return (
+          //bartenders name and his/hers status
           <li key={e.name}>
             {e.name} status: {e.statusDetail}
           </li>
