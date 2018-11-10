@@ -2,6 +2,7 @@ import React from "react";
 export default class Bartenders extends React.Component {
   render() {
     function mapBartenders(bartenders) {
+      console.log(bartenders);
       let working = bartenders.map(e => {
         return (
           <li key={e.name}>
