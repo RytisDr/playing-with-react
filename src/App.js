@@ -20,7 +20,10 @@ class App extends Component {
       <div className="App">
         <QueueCounter queueLength={this.state.bar.queue} />
         <Bartenders bartenders={this.state.bar.bartenders} />
-        <BeerInfo beertypes={this.state.bar.beertypes} />
+        <BeerInfo
+          beertypes={this.state.bar.beertypes}
+          tapUsage={this.state.bar.bartenders}
+        />
       </div>
     );
   }
